@@ -39,7 +39,7 @@ Para conferir, use `dig apparenceodonto.com.br +short` ou o site dnschecker.org.
 ## Como editar
 
 - Telefone e link do WhatsApp: procure por `wa.me/5511960717526` em `index.html`.
-- Instagram: procure por `aparence_odontologia`.
+- Instagram: procure por `apparence_odontologia`.
 - Horários e endereço: seções da faixa de informações, "Como chegar" e rodapé.
 - Fotos: troque os arquivos em `images/` mantendo o mesmo nome (máximo de 960 px de largura; logo, 700 px).
 
