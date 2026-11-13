@@ -4,41 +4,214 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Apparence Odontologia | Clínica odontológica na Lapa, São Paulo</title>
-<meta name="description" content="Apparence Odontologia, na Lapa, em São Paulo. Avaliação, clareamento, restaurações estéticas, facetas, ortodontia e implantes. Agende pelo WhatsApp.">
+<meta name="description" content="Apparence Odontologia, na Lapa, em São Paulo. Avaliação, clareamento, restaurações estéticas, facetas, ortodontia e implantes. Agende sua avaliação pelo WhatsApp.">
 <link rel="canonical" href="https://apparenceodonto.com.br/">
-<meta name="theme-color" content="#F5F8F7">
+<meta name="theme-color" content="#F4F7F6">
+
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Apparence Odontologia">
 <meta property="og:title" content="Apparence Odontologia | Clínica odontológica na Lapa, São Paulo">
-<meta property="og:description" content="Apparence Odontologia, na Lapa, em São Paulo. Avaliação, clareamento, restaurações estéticas, facetas, ortodontia e implantes. Agende pelo WhatsApp.">
+<meta property="og:description" content="Avaliação, clareamento, restaurações estéticas, facetas, ortodontia e implantes. Agende sua avaliação pelo WhatsApp.">
 <meta property="og:url" content="https://apparenceodonto.com.br/">
-<meta property="og:image" content="https://apparenceodonto.com.br/images/recepcao.jpg">
+<meta property="og:image" content="https://apparenceodonto.com.br/images/recepcao-og.jpg">
+<meta property="og:image:width" content="960">
+<meta property="og:image:height" content="504">
+<meta property="og:image:alt" content="Recepção da Apparence Odontologia, com poltronas azuis e balcão com iluminação em LED">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="images/logo-apparence.jpg">
+
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&amp;family=Figtree:wght@400;500;600&amp;display=swap">
+
 <style>
-:root{--bg:#F5F8F7;--surface:#FFFFFF;--ink:#14282C;--muted:#4B6064;--line:#D5E1DE;--tint:#E3EEEB}
-body{margin:0;background:#F5F8F7}
-a{color:inherit}
-.btn{transition:background-color .15s ease,transform .15s ease}
-.btn:hover{transform:translateY(-1px)}
-.btn-primary:hover{background:#14595A !important}
-.btn-light:hover{background:#E3EEEB !important}
-.navlink:hover{color:#1B6F69}
-a:focus-visible,summary:focus-visible{outline:3px solid #1B6F69;outline-offset:3px;border-radius:6px}
-.dark a:focus-visible{outline-color:#FFFFFF}
-details>summary{list-style:none}
-details>summary::-webkit-details-marker{display:none}
-details[open] .plus{transform:rotate(45deg)}
-.plus{transition:transform .2s ease}
-@media (prefers-reduced-motion: reduce){.btn,.plus{transition:none}.btn:hover{transform:none}}
-html{scroll-behavior:smooth}
-@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+:root{
+  --bg:#F4F7F6;
+  --surface:#FFFFFF;
+  --tint:#E4EEEC;
+  --ink:#0E2F3B;
+  --muted:#3E5963;
+  --line:#D2DFDC;
+  --accent:#0B6B66;
+  --accent-hover:#094F4C;
+  --on-dark:#C6DAD6;
+  --accent-light:#8FD6CA;
+  --radius:20px;
+  --font-title:'Bricolage Grotesque','Figtree',system-ui,sans-serif;
+  --font-text:'Figtree',system-ui,-apple-system,'Segoe UI',sans-serif;
+}
 *,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font-text);font-size:18px;line-height:1.6;padding-bottom:88px;overflow-x:hidden}
+img{max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{font-family:var(--font-title);font-weight:700;margin:0;text-wrap:balance}
+h2{font-size:clamp(30px,4.2vw,44px);line-height:1.08;letter-spacing:-.022em}
+h3{font-size:22px;line-height:1.2;letter-spacing:-.01em}
+p{margin:0;text-wrap:pretty}
+
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.section{padding:clamp(56px,8vw,96px) 0}
+.eyebrow{font-size:14px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.lead{color:var(--muted)}
+
+/* Foco visível */
+a:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:8px}
+.on-dark a:focus-visible{outline-color:#FFFFFF}
+.skip{position:absolute;left:12px;top:-60px;background:var(--ink);color:#fff;padding:12px 18px;border-radius:10px;z-index:30;text-decoration:none;font-weight:600}
+.skip:focus{top:12px}
+
+/* Botões */
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 26px;border-radius:999px;font-weight:600;font-size:17px;line-height:1.2;text-align:center;text-decoration:none;border:2px solid transparent;transition:background-color .15s ease,color .15s ease,transform .15s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn-lg{min-height:56px;padding:0 30px;font-size:18px}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-primary:hover{background:var(--accent-hover)}
+.btn-outline{border-color:var(--accent);color:var(--accent);background:transparent}
+.btn-outline:hover{background:var(--tint)}
+.btn-white{background:#fff;color:var(--ink)}
+.btn-white:hover{background:var(--tint)}
+.link{font-weight:600;min-height:44px;display:inline-flex;align-items:center;color:var(--accent)}
+
+/* Cabeçalho */
+.header{border-bottom:1px solid var(--line)}
+.header .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:4px 12px;padding-top:10px;padding-bottom:6px}
+.brand{display:inline-flex;align-items:center;min-height:44px}
+.brand img{display:block;height:46px;width:auto;mix-blend-mode:multiply}
+.header .btn{min-height:44px;padding:0 14px;font-size:14px}
+.nav{order:3;flex:1 0 100%;display:flex;gap:0 22px;overflow-x:auto;font-size:16px;font-weight:500;scrollbar-width:none}
+.nav::-webkit-scrollbar{display:none}
+.nav a{flex:none;min-height:44px;display:flex;align-items:center;text-decoration:none}
+.nav a:hover{color:var(--accent)}
+
+/* Topo */
+.hero .wrap{display:grid;gap:36px;padding-top:clamp(32px,6vw,72px);padding-bottom:clamp(40px,6vw,72px)}
+.hero-text{display:flex;flex-direction:column;align-items:flex-start;gap:22px}
+.hero h1{font-size:clamp(36px,6vw,62px);line-height:1.04;letter-spacing:-.028em}
+.hero .sub{font-size:20px;color:var(--muted);max-width:50ch}
+.hero-actions{display:flex;flex-wrap:wrap;align-items:center;gap:6px 24px}
+.hero-photo{margin:0;justify-self:center;width:100%;max-width:440px}
+.hero-photo img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:999px 999px 28px 28px;background:var(--tint)}
+
+/* Faixa de informações */
+.strip{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.strip .wrap{display:grid;gap:0}
+.strip-item{padding:20px 0;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:2px}
+.strip-item:last-child{border-bottom:0}
+.label{font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.strip-item span:not(.label){font-weight:500}
+
+/* Tratamentos */
+.head{display:flex;flex-direction:column;gap:14px;max-width:660px;margin-bottom:40px}
+.treat-list{list-style:none;margin:0;padding:0;display:grid;border-top:2px solid var(--ink)}
+.treat{display:grid;grid-template-columns:52px 1fr;gap:4px 12px;padding:24px 0;border-bottom:1px solid var(--line)}
+.treat-n{font-family:var(--font-title);font-weight:700;font-size:20px;color:var(--accent);line-height:1.4}
+.treat p{grid-column:2;color:var(--muted);font-size:17px}
+.cta-row{margin-top:40px}
+
+/* Como funciona */
+.steps-sec{background:var(--tint);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.steps{list-style:none;margin:0 0 40px;padding:0;display:grid;gap:32px}
+.step{display:flex;flex-direction:column;gap:10px;padding-top:20px;border-top:2px solid var(--accent)}
+.step-n{font-family:var(--font-title);font-weight:700;font-size:44px;line-height:1;color:var(--accent);letter-spacing:-.03em}
+.step p{color:var(--muted);font-size:17px}
+
+/* Galeria */
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:36px 0 0}
+.gallery figure{margin:0}
+.gallery img{display:block;width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:var(--radius);background:var(--tint)}
+.gallery figcaption{margin-top:8px;font-size:15px;color:var(--muted)}
+.gallery figure:nth-child(even){margin-top:0}
+
+/* Equipe */
+.team .wrap{display:grid;gap:36px;align-items:center}
+.team-photo{margin:0;width:100%;max-width:420px}
+.team-photo img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 28%;border-radius:28px 28px 999px 999px;background:var(--tint)}
+.team-text{display:flex;flex-direction:column;gap:18px}
+.person{display:flex;flex-direction:column;gap:2px;padding-top:18px;border-top:1px solid var(--line)}
+.person strong{font-family:var(--font-title);font-size:24px;line-height:1.2}
+.person span{color:var(--muted);font-size:17px}
+
+/* Como chegar */
+.where{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.where .wrap{display:grid;gap:36px;align-items:center}
+.where-text{display:flex;flex-direction:column;align-items:flex-start;gap:20px}
+.where address{font-style:normal;font-size:20px;font-weight:500;line-height:1.5}
+.where-hours{display:flex;flex-direction:column;gap:2px;color:var(--muted)}
+.where-actions{display:flex;flex-wrap:wrap;gap:12px}
+.map{width:100%;height:380px;border:0;border-radius:28px;background:var(--tint);display:block}
+
+/* Instagram */
+.on-dark{background:var(--ink);color:#fff}
+.insta .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:28px}
+.insta-text{flex:1 1 380px;display:flex;flex-direction:column;gap:12px}
+.insta h2{font-size:clamp(28px,3.6vw,40px)}
+.insta p{color:var(--on-dark);max-width:54ch}
+
+/* Dúvidas */
+.faq .wrap{max-width:820px}
+.faq-list{margin-top:32px;border-top:2px solid var(--ink)}
+details{border-bottom:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;min-height:56px;padding:18px 0;display:flex;align-items:center;justify-content:space-between;gap:16px;font-weight:600;font-size:19px}
+summary::-webkit-details-marker{display:none}
+.plus{flex:none;transition:transform .2s ease}
+details[open] .plus{transform:rotate(45deg)}
+details p{margin:0 0 20px;color:var(--muted);max-width:62ch}
+
+/* Chamada final */
+.final{background:var(--tint);border-top:1px solid var(--line)}
+.final .wrap{display:flex;flex-direction:column;align-items:flex-start;gap:22px}
+.final h2{font-size:clamp(30px,4.6vw,52px);max-width:18ch}
+.final p{max-width:50ch;color:var(--muted)}
+
+/* Rodapé */
+.footer .wrap{padding-top:56px;padding-bottom:32px;display:flex;flex-direction:column;gap:40px}
+.footer-grid{display:grid;gap:32px}
+.logo-strip{display:inline-flex;background:#fff;border-radius:18px;padding:12px 20px}
+.logo-strip img{display:block;height:60px;width:auto}
+.footer-col{display:flex;flex-direction:column;gap:4px;font-size:16px}
+.footer-col .label{color:var(--on-dark);margin-bottom:4px}
+.footer-col a{min-height:44px;display:inline-flex;align-items:center}
+.legal{border-top:1px solid #35545C;padding-top:22px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 24px;font-size:14px;color:var(--on-dark)}
+
+/* Barra fixa do celular */
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:20;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:rgba(244,247,246,.96);border-top:1px solid var(--line);transform:translateY(110%);transition:transform .2s ease}
+.sticky.show{transform:none}
+.sticky .btn{width:100%;min-height:52px}
+
+@media (min-width:640px){
+  .gallery{grid-template-columns:repeat(4,1fr)}
+  .gallery figure:nth-child(even){margin-top:28px}
+  .strip .wrap{grid-template-columns:repeat(3,1fr);gap:0 32px}
+  .strip-item{border-bottom:0}
+  .steps{grid-template-columns:repeat(3,1fr);gap:36px}
+  .footer-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media (min-width:900px){
+  body{padding-bottom:0}
+  .wrap{padding:0 32px}
+  .header .wrap{flex-wrap:nowrap;gap:4px 24px;padding-top:12px;padding-bottom:12px}
+  .brand img{height:52px}
+  .header .btn{min-height:48px;padding:0 26px;font-size:17px}
+  .nav{order:0;flex:0 1 auto;overflow:visible;gap:0 26px}
+  .hero .wrap{grid-template-columns:1.1fr .9fr;gap:64px;align-items:center}
+  .hero-photo{justify-self:end}
+  .treat-list{grid-template-columns:repeat(2,1fr);column-gap:64px}
+  .treat{grid-template-columns:56px 1fr}
+  .team .wrap{grid-template-columns:.8fr 1.2fr;gap:72px}
+  .where .wrap{grid-template-columns:1fr 1.15fr;gap:64px}
+  .map{height:440px}
+  .footer-grid{grid-template-columns:.8fr 1.1fr 1.3fr 1.3fr}
+  .sticky{display:none}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .btn,.plus,.sticky{transition:none}
+  .btn:hover{transform:none}
+}
 </style>
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -50,311 +223,316 @@ html{scroll-behavior:smooth}
   "telephone": "+55 11 96071-7526",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Rua Clélia, 2208 - conjunto 602",
+    "streetAddress": "Rua Clélia, 2208, conjunto 602",
     "addressLocality": "São Paulo",
     "addressRegion": "SP",
     "addressCountry": "BR"
   },
   "openingHoursSpecification": [
-    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "18:00"}
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "09:00",
+      "closes": "18:00"
+    }
   ],
   "sameAs": ["https://www.instagram.com/aparence_odontologia/"]
 }
 </script>
 </head>
+
 <body>
-<main style="display:block">
-<!-- Layout idea: calm clinical porcelain page, one teal accent, single action (WhatsApp) repeated from header to footer -->
-<div style="--accent: #1B6F69; background: #F5F8F7; color: #14282C; font-family: 'Figtree', system-ui, -apple-system, 'Segoe UI', sans-serif; font-size: 18px; line-height: 1.6; width: 100%; box-sizing: border-box">
+<a class="skip" href="#conteudo">Ir para o conteúdo</a>
 
-  <!-- HEADER -->
-  <header style="border-bottom: 1px solid #D5E1DE; background: #F5F8F7">
-    <div style="max-width: 1120px; margin: 0 auto; padding: 14px 24px; box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 32px">
-      <a href="#inicio" style="display: flex; align-items: center; gap: 12px; text-decoration: none; min-height: 44px">
-        <img src="images/logo-apparence.jpg" alt="Apparence Odontologia" style="display: block; height: 56px; width: auto; mix-blend-mode: multiply">
-      </a>
-      <nav aria-label="Seções da página" style="display: flex; flex-wrap: wrap; gap: 4px 24px; font-size: 16px; font-weight: 500">
-        <a class="navlink" href="#tratamentos" style="text-decoration: none; min-height: 44px; display: flex; align-items: center">Tratamentos</a>
-        <a class="navlink" href="#como-funciona" style="text-decoration: none; min-height: 44px; display: flex; align-items: center">Como funciona</a>
-        <a class="navlink" href="#espaco" style="text-decoration: none; min-height: 44px; display: flex; align-items: center">A clínica</a>
-        <a class="navlink" href="#como-chegar" style="text-decoration: none; min-height: 44px; display: flex; align-items: center">Como chegar</a>
-        <a class="navlink" href="#duvidas" style="text-decoration: none; min-height: 44px; display: flex; align-items: center">Dúvidas</a>
-      </nav>
-      <a class="btn btn-primary" href="https://wa.me/5511960717526?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." style="background: #1B6F69; color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 16px; padding: 0 22px; min-height: 44px; border-radius: 999px; display: inline-flex; align-items: center">Agendar pelo WhatsApp</a>
-    </div>
-  </header>
+<!-- 1. CABEÇALHO -->
+<header class="header">
+  <div class="wrap">
+    <a class="brand" href="#inicio" aria-label="Apparence Odontologia, início da página">
+      <img src="images/logo-apparence.jpg" width="700" height="345" alt="Apparence Odontologia">
+    </a>
+    <nav class="nav" aria-label="Seções da página">
+      <a href="#tratamentos">Tratamentos</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#espaco">A clínica</a>
+      <a href="#como-chegar">Como chegar</a>
+      <a href="#duvidas">Dúvidas</a>
+    </nav>
+    <a class="btn btn-primary" href="https://wa.me/5511960717526?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
+  </div>
+</header>
 
-  <!-- HERO -->
-  <section id="inicio">
-    <div style="max-width: 1120px; margin: 0 auto; padding: clamp(40px, 7vw, 88px) 24px clamp(40px, 6vw, 72px); box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: center; gap: 48px">
-      <div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
-        <p style="margin: 0; font-size: 14px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #1B6F69">Clínica odontológica na Lapa, São Paulo</p>
-        <h1 style="margin: 0; font-family: 'Bricolage Grotesque', 'Figtree', system-ui, sans-serif; font-weight: 700; font-size: clamp(36px, 5.4vw, 64px); line-height: 1.04; letter-spacing: -0.025em; text-wrap: balance">Cuide da sua saúde bucal e do seu sorriso com calma e atenção.</h1>
-        <p style="margin: 0; max-width: 52ch; font-size: 20px; color: #4B6064; text-wrap: pretty">A Apparence Odontologia atende com horário marcado. Chame no WhatsApp, conte o que você procura e agende sua avaliação.</p>
-        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px 24px">
-          <a class="btn btn-primary" href="https://wa.me/5511960717526?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." style="background: #1B6F69; color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 18px; padding: 0 28px; min-height: 56px; border-radius: 999px; display: inline-flex; align-items: center">Agendar minha avaliação</a>
-          <a class="navlink" href="#tratamentos" style="font-weight: 600; font-size: 16px; min-height: 44px; display: inline-flex; align-items: center">Ver tratamentos</a>
+<main id="conteudo">
+
+  <!-- 2. TOPO -->
+  <section class="hero" id="inicio">
+    <div class="wrap">
+      <div class="hero-text">
+        <p class="eyebrow">Apparence Odontologia · Lapa, São Paulo</p>
+        <h1>Agende sua avaliação odontológica na Lapa.</h1>
+        <p class="sub">Chame no WhatsApp, conte o que você procura e combine um horário. O dentista examina, conversa com você e indica o tratamento para o seu caso.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary btn-lg" href="https://wa.me/5511960717526?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
+          <a class="link" href="#tratamentos">Ver tratamentos</a>
         </div>
       </div>
-      <div style="flex: 1 1 340px; min-width: 0">
-        <img src="images/recepcao.jpg" alt="Recepção da Apparence Odontologia, com poltronas azuis e balcão com iluminação em LED" style="display: block; width: 100%; aspect-ratio: 4 / 5; max-height: 560px; object-fit: cover; border-radius: 28px; background: #E3EEEB">
+      <figure class="hero-photo">
+        <img src="images/recepcao.jpg" width="960" height="1280" fetchpriority="high" alt="Recepção da Apparence Odontologia, com poltronas azuis, piso de madeira clara e balcão com iluminação em LED">
+      </figure>
+    </div>
+  </section>
+
+  <!-- 3. FAIXA DE INFORMAÇÕES -->
+  <section class="strip" aria-label="Informações práticas">
+    <div class="wrap">
+      <div class="strip-item">
+        <span class="label">Endereço</span>
+        <span>Rua Clélia, 2208, conjunto 602<br>Lapa, São Paulo – SP</span>
+      </div>
+      <div class="strip-item">
+        <span class="label">Horários</span>
+        <span>Segunda a sexta, das 09h às 18h<br>Sábados alternados, das 09h às 13h</span>
+      </div>
+      <div class="strip-item">
+        <span class="label">Agendamento</span>
+        <span>Pelo WhatsApp<br>(11) 96071-7526</span>
       </div>
     </div>
   </section>
 
-  <!-- INFO STRIP -->
-  <section aria-label="Informações práticas" style="border-top: 1px solid #D5E1DE; border-bottom: 1px solid #D5E1DE; background: #FFFFFF">
-    <div style="max-width: 1120px; margin: 0 auto; padding: 28px 24px; box-sizing: border-box; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr)); gap: 24px 32px">
-      <div style="display: flex; flex-direction: column; gap: 2px">
-        <span style="font-size: 13px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #4B6064">Onde fica</span>
-        <span style="font-weight: 500">Rua Clélia, 2208 – conjunto 602 · Lapa, São Paulo – SP</span>
+  <!-- 4. TRATAMENTOS -->
+  <section class="section" id="tratamentos">
+    <div class="wrap">
+      <div class="head">
+        <h2>Tratamentos</h2>
+        <p class="lead">Cada indicação depende da avaliação do dentista. Na primeira consulta, você conversa sobre o que faz sentido para o seu caso.</p>
       </div>
-      <div style="display: flex; flex-direction: column; gap: 2px">
-        <span style="font-size: 13px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #4B6064">Horários</span>
-        <span style="font-weight: 500">Segunda a sexta, das 09h às 18h</span>
-        <span style="font-weight: 500">Sábados alternados, das 09h às 13h</span>
-      </div>
-      <div style="display: flex; flex-direction: column; gap: 2px">
-        <span style="font-size: 13px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #4B6064">Agendamento</span>
-        <span style="font-weight: 500">Pelo WhatsApp, sem precisar ligar</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- TRATAMENTOS -->
-  <section id="tratamentos">
-    <div style="max-width: 1120px; margin: 0 auto; padding: clamp(56px, 8vw, 96px) 24px; box-sizing: border-box; display: flex; flex-direction: column; gap: 40px">
-      <div style="display: flex; flex-direction: column; gap: 12px; max-width: 640px">
-        <h2 style="margin: 0; font-family: 'Bricolage Grotesque', 'Figtree', system-ui, sans-serif; font-weight: 700; font-size: clamp(30px, 4vw, 44px); line-height: 1.1; letter-spacing: -0.02em; text-wrap: balance">Tratamentos para a saúde e a estética do sorriso</h2>
-        <p style="margin: 0; color: #4B6064; text-wrap: pretty">Cada indicação depende da avaliação do dentista. Veja o que a clínica oferece e converse sobre o que faz sentido para você.</p>
-      </div>
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); gap: 20px">
-
-        <div style="background: #FFFFFF; border: 1px solid #D5E1DE; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 14px">
-          <div style="width: 48px; height: 48px; border-radius: 14px; background: #E3EEEB; display: flex; align-items: center; justify-content: center">
-            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="#1B6F69" stroke-width="2"/><path d="M16.5 16.5L22 22" stroke="#1B6F69" stroke-width="2" stroke-linecap="round"/></svg>
-          </div>
-          <h3 style="margin: 0; font-family: 'Bricolage Grotesque', 'Figtree', system-ui, sans-serif; font-weight: 700; font-size: 22px; line-height: 1.2">Avaliação e prevenção</h3>
-          <p style="margin: 0; color: #4B6064; font-size: 17px">Consulta de avaliação, limpeza e orientação para manter a saúde da boca em dia.</p>
-        </div>
-
-        <div style="background: #FFFFFF; border: 1px solid #D5E1DE; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 14px">
-          <div style="width: 48px; height: 48px; border-radius: 14px; background: #E3EEEB; display: flex; align-items: center; justify-content: center">
-            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true"><path d="M13 3l1.8 5.2L20 10l-5.2 1.8L13 17l-1.8-5.2L6 10l5.2-1.8L13 3z" stroke="#1B6F69" stroke-width="2" stroke-linejoin="round"/><path d="M20 17l.8 2.2L23 20l-2.2.8L20 23l-.8-2.2L17 20l2.2-.8L20 17z" stroke="#1B6F69" stroke-width="1.6" stroke-linejoin="round"/></svg>
-          </div>
-          <h3 style="margin: 0; font-family: 'Bricolage Grotesque', 'Figtree', system-ui, sans-serif; font-weight: 700; font-size: 22px; line-height: 1.2">Clareamento dental</h3>
-          <p style="margin: 0; color: #4B6064; font-size: 17px">Indicado após avaliação, para clarear os dentes com acompanhamento profissional.</p>
-        </div>
-
-        <div style="background: #FFFFFF; border: 1px solid #D5E1DE; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 14px">
-          <div style="width: 48px; height: 48px; border-radius: 14px; background: #E3EEEB; display: flex; align-items: center; justify-content: center">
-            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true"><path d="M5 8c0-3 3-4 5-4 1.2 0 2 .5 3 .5s1.8-.5 3-.5c2 0 5 1 5 4 0 3-1.5 4-1.5 8 0 3-1 6-3 6s-2-4-3.5-4S11.500 22 9.500 22 6.500 19 6.500 16C6.500 12 5 11 5 8z" stroke="#1B6F69" stroke-width="2" stroke-linejoin="round"/></svg>
-          </div>
-          <h3 style="margin: 0; font-family: 'Bricolage Grotesque', 'Figtree', system-ui, sans-serif; font-weight: 700; font-size: 22px; line-height: 1.2">Restaurações estéticas</h3>
-          <p style="margin: 0; color: #4B6064; font-size: 17px">Reconstrução de dentes com resina na cor natural do seu sorriso.</p>
-        </div>
-
-        <div style="background: #FFFFFF; border: 1px solid #D5E1DE; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 14px">
-          <div style="width: 48px; height: 48px; border-radius: 14px; background: #E3EEEB; display: flex; align-items: center; justify-content: center">
-            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true"><rect x="5" y="3" width="16" height="20" rx="6" stroke="#1B6F69" stroke-width="2"/><path d="M9 9h8M9 13h8" stroke="#1B6F69" stroke-width="2" stroke-linecap="round"/></svg>
-          </div>
-          <h3 style="margin: 0; font-family: 'Bricolage Grotesque', 'Figtree', system-ui, sans-serif; font-weight: 700; font-size: 22px; line-height: 1.2">Facetas e lentes</h3>
-          <p style="margin: 0; color: #4B6064; font-size: 17px">Opção para ajustar forma, cor e alinhamento visual dos dentes, quando indicada.</p>
-        </div>
-
-        <div style="background: #FFFFFF; border: 1px solid #D5E1DE; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 14px">
-          <div style="width: 48px; height: 48px; border-radius: 14px; background: #E3EEEB; display: flex; align-items: center; justify-content: center">
-            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true"><path d="M3 10h20M3 16h20" stroke="#1B6F69" stroke-width="2" stroke-linecap="round"/><rect x="6" y="7" width="4" height="12" rx="1.500" stroke="#1B6F69" stroke-width="2"/><rect x="16" y="7" width="4" height="12" rx="1.500" stroke="#1B6F69" stroke-width="2"/></svg>
-          </div>
-          <h3 style="margin: 0; font-family: 'Bricolage Grotesque', 'Figtree', system-ui, sans-serif; font-weight: 700; font-size: 22px; line-height: 1.2">Ortodontia</h3>
-          <p style="margin: 0; color: #4B6064; font-size: 17px">Aparelhos e alinhadores para posicionar os dentes e melhorar a mordida.</p>
-        </div>
-
-        <div style="background: #FFFFFF; border: 1px solid #D5E1DE; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 14px">
-          <div style="width: 48px; height: 48px; border-radius: 14px; background: #E3EEEB; display: flex; align-items: center; justify-content: center">
-            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true"><path d="M7 4h12v6a6 6 0 0 1-12 0V4z" stroke="#1B6F69" stroke-width="2" stroke-linejoin="round"/><path d="M10 16v6M16 16v6M9 19h8" stroke="#1B6F69" stroke-width="2" stroke-linecap="round"/></svg>
-          </div>
-          <h3 style="margin: 0; font-family: 'Bricolage Grotesque', 'Figtree', system-ui, sans-serif; font-weight: 700; font-size: 22px; line-height: 1.2">Implantes e próteses</h3>
-          <p style="margin: 0; color: #4B6064; font-size: 17px">Reposição de dentes ausentes para recuperar a mastigação e a aparência do sorriso.</p>
-        </div>
-
+      <ol class="treat-list">
+        <li class="treat">
+          <span class="treat-n" aria-hidden="true">01</span>
+          <h3>Avaliação e prevenção</h3>
+          <p>Consulta para conhecer a sua saúde bucal e orientar os cuidados do dia a dia.</p>
+        </li>
+        <li class="treat">
+          <span class="treat-n" aria-hidden="true">02</span>
+          <h3>Clareamento dental</h3>
+          <p>Para quem deseja dentes mais claros. O dentista avalia se o clareamento é indicado para você.</p>
+        </li>
+        <li class="treat">
+          <span class="treat-n" aria-hidden="true">03</span>
+          <h3>Restaurações estéticas</h3>
+          <p>Reparo de dentes com materiais da cor do dente, conforme a necessidade avaliada.</p>
+        </li>
+        <li class="treat">
+          <span class="treat-n" aria-hidden="true">04</span>
+          <h3>Facetas e lentes</h3>
+          <p>Tratamentos para modificar o formato, a cor ou a aparência dos dentes, quando houver indicação.</p>
+        </li>
+        <li class="treat">
+          <span class="treat-n" aria-hidden="true">05</span>
+          <h3>Ortodontia</h3>
+          <p>Acompanhamento para alinhar os dentes e ajustar a mordida, de acordo com cada caso.</p>
+        </li>
+        <li class="treat">
+          <span class="treat-n" aria-hidden="true">06</span>
+          <h3>Implantes e próteses</h3>
+          <p>Opções para repor dentes ausentes. O plano é definido depois da avaliação.</p>
+        </li>
+      </ol>
+      <div class="cta-row">
+        <a class="btn btn-primary btn-lg" href="https://wa.me/5511960717526?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
       </div>
     </div>
   </section>
 
-  <!-- COMO FUNCIONA -->
-  <section id="como-funciona" style="background: #FFFFFF; border-top: 1px solid #D5E1DE; border-bottom: 1px solid #D5E1DE">
-    <div style="max-width: 1120px; margin: 0 auto; padding: clamp(56px, 8vw, 96px) 24px; box-sizing: border-box; display: flex; flex-direction: column; gap: 40px">
-      <h2 style="margin: 0; max-width: 640px; font-family: 'Bricolage Grotesque', 'Figtree', system-ui, sans-serif; font-weight: 700; font-size: clamp(30px, 4vw, 44px); line-height: 1.1; letter-spacing: -0.02em; text-wrap: balance">Como é o caminho até o seu tratamento</h2>
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); gap: 32px">
-        <div style="display: flex; flex-direction: column; gap: 12px">
-          <div style="width: 44px; height: 44px; border-radius: 999px; background: #1B6F69; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-family: 'Bricolage Grotesque', 'Figtree', system-ui, sans-serif; font-weight: 700; font-size: 20px">1</div>
-          <h3 style="margin: 0; font-family: 'Bricolage Grotesque', 'Figtree', system-ui, sans-serif; font-weight: 700; font-size: 22px">Chame no WhatsApp</h3>
-          <p style="margin: 0; color: #4B6064; font-size: 17px">Conte o que você precisa e escolha um horário disponível.</p>
+  <!-- 5. COMO FUNCIONA -->
+  <section class="section steps-sec" id="como-funciona">
+    <div class="wrap">
+      <div class="head">
+        <h2>Como funciona</h2>
+      </div>
+      <ol class="steps">
+        <li class="step">
+          <span class="step-n" aria-hidden="true">1</span>
+          <h3>Chame no WhatsApp</h3>
+          <p>Envie uma mensagem, conte o que você procura e combine um horário.</p>
+        </li>
+        <li class="step">
+          <span class="step-n" aria-hidden="true">2</span>
+          <h3>Faça a avaliação</h3>
+          <p>O dentista examina a sua boca, ouve você e explica as opções.</p>
+        </li>
+        <li class="step">
+          <span class="step-n" aria-hidden="true">3</span>
+          <h3>Decida com calma</h3>
+          <p>Com as informações em mãos, você tira as dúvidas e decide no seu tempo.</p>
+        </li>
+      </ol>
+      <a class="btn btn-primary btn-lg" href="https://wa.me/5511960717526?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
+    </div>
+  </section>
+
+  <!-- 6. GALERIA -->
+  <section class="section" id="espaco">
+    <div class="wrap">
+      <div class="head" style="margin-bottom:0">
+        <h2>Conheça o espaço antes de vir</h2>
+      </div>
+      <div class="gallery">
+        <figure>
+          <img loading="lazy" decoding="async" src="images/sala-de-espera.jpg" width="960" height="1280" alt="Sala de espera com poltrona azul, televisão na parede e um cantinho com água e café">
+          <figcaption>Sala de espera</figcaption>
+        </figure>
+        <figure>
+          <img loading="lazy" decoding="async" src="images/consultorio-azul-marinho.jpg" width="960" height="1280" alt="Consultório com cadeira odontológica azul-marinho e porta de vidro que dá para a varanda">
+          <figcaption>Consultório</figcaption>
+        </figure>
+        <figure>
+          <img loading="lazy" decoding="async" src="images/consultorio-parede-turquesa.jpg" width="960" height="1280" alt="Consultório com parede turquesa, cadeira odontológica azul-clara e janela com vista da cidade">
+          <figcaption>Consultório</figcaption>
+        </figure>
+        <figure>
+          <img loading="lazy" decoding="async" src="images/consultorio-janela.jpg" width="960" height="1280" alt="Consultório com janela ampla, bancada branca com pia e um espelho em forma de dente na parede">
+          <figcaption>Consultório</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. A DRA. GABRIELA -->
+  <section class="section team" id="equipe" style="padding-top:0">
+    <div class="wrap">
+      <figure class="team-photo">
+        <img loading="lazy" decoding="async" src="images/dra-gabriela-torres.jpg" width="960" height="1271" alt="Dra. Gabriela Torres Belo, cirurgiã-dentista e responsável técnica da Apparence Odontologia, sentada e sorrindo">
+      </figure>
+      <div class="team-text">
+        <p class="eyebrow">A equipe</p>
+        <h2>Quem cuida de você na Apparence</h2>
+        <p class="lead">A Dra. Gabriela é a cirurgiã-dentista responsável técnica da clínica.</p>
+        <div class="person">
+          <strong>Dra. Gabriela Torres Belo</strong>
+          <span>Cirurgiã-dentista · CRO/SP-CD-138560</span>
         </div>
-        <div style="display: flex; flex-direction: column; gap: 12px">
-          <div style="width: 44px; height: 44px; border-radius: 999px; background: #1B6F69; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-family: 'Bricolage Grotesque', 'Figtree', system-ui, sans-serif; font-weight: 700; font-size: 20px">2</div>
-          <h3 style="margin: 0; font-family: 'Bricolage Grotesque', 'Figtree', system-ui, sans-serif; font-weight: 700; font-size: 22px">Faça a avaliação</h3>
-          <p style="margin: 0; color: #4B6064; font-size: 17px">O dentista examina, conversa com você e apresenta as opções para o seu caso.</p>
-        </div>
-        <div style="display: flex; flex-direction: column; gap: 12px">
-          <div style="width: 44px; height: 44px; border-radius: 999px; background: #1B6F69; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-family: 'Bricolage Grotesque', 'Figtree', system-ui, sans-serif; font-weight: 700; font-size: 20px">3</div>
-          <h3 style="margin: 0; font-family: 'Bricolage Grotesque', 'Figtree', system-ui, sans-serif; font-weight: 700; font-size: 22px">Decida com calma</h3>
-          <p style="margin: 0; color: #4B6064; font-size: 17px">Você recebe o plano de tratamento e tira as dúvidas antes de começar.</p>
-        </div>
-      </div>
-      <div>
-        <a class="btn btn-primary" href="https://wa.me/5511960717526?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." style="background: #1B6F69; color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 18px; padding: 0 28px; min-height: 56px; border-radius: 999px; display: inline-flex; align-items: center">Agendar minha avaliação</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ESPAÇO -->
-  <section id="espaco">
-    <div style="max-width: 1120px; margin: 0 auto; padding: clamp(56px, 8vw, 96px) 24px 0; box-sizing: border-box; display: flex; flex-direction: column; gap: 32px">
-      <h2 style="margin: 0; max-width: 640px; font-family: 'Bricolage Grotesque', 'Figtree', system-ui, sans-serif; font-weight: 700; font-size: clamp(30px, 4vw, 44px); line-height: 1.1; letter-spacing: -0.02em; text-wrap: balance">Conheça o espaço antes de vir</h2>
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(140px, 100%), 1fr)); gap: 16px">
-        <img loading="lazy" decoding="async" src="images/sala-de-espera.jpg" alt="Sala de espera com poltrona azul, TV e cantinho de água e café" style="display: block; width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 20px; background: #E3EEEB">
-        <img loading="lazy" decoding="async" src="images/consultorio-azul-marinho.jpg" alt="Consultório com cadeira odontológica azul-marinho e porta de vidro para a varanda" style="display: block; width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 20px; background: #E3EEEB">
-        <img loading="lazy" decoding="async" src="images/consultorio-parede-turquesa.jpg" alt="Consultório com parede turquesa, cadeira odontológica e vista da cidade" style="display: block; width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 20px; background: #E3EEEB">
-        <img loading="lazy" decoding="async" src="images/consultorio-janela.jpg" alt="Consultório com janela ampla, bancada com pia e um espelho em forma de dente" style="display: block; width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 20px; background: #E3EEEB">
-      </div>
-    </div>
-  </section>
-
-  <!-- A CLÍNICA -->
-  <section id="clinica">
-    <div style="max-width: 1120px; margin: 0 auto; padding: clamp(56px, 8vw, 96px) 24px; box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: center; gap: 48px">
-      <div style="flex: 1 1 340px; min-width: 0">
-        <img loading="lazy" decoding="async" src="images/dra-gabriela-torres.jpg" alt="Dra. Gabriela Torres Belo, cirurgiã-dentista e responsável técnica da Apparence Odontologia" style="display: block; width: 100%; max-width: 440px; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 25%; border-radius: 28px; background: #E3EEEB">
-      </div>
-      <div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
-        <h2 style="margin: 0; font-family: 'Bricolage Grotesque', 'Figtree', system-ui, sans-serif; font-weight: 700; font-size: clamp(30px, 4vw, 44px); line-height: 1.1; letter-spacing: -0.02em; text-wrap: balance">Quem cuida de você na Apparence</h2>
-        <p style="margin: 0; color: #4B6064; text-wrap: pretty">A Dra. Gabriela Torres Belo é a cirurgiã-dentista responsável técnica da Apparence Odontologia.</p>
-        <div style="display: flex; flex-direction: column; gap: 4px; padding-top: 4px">
-          <span style="font-weight: 600; font-size: 19px">Dra. Gabriela Torres Belo</span>
-          <span style="color: #4B6064; font-size: 16px">Cirurgiã-dentista · CRO/SP-CD-138560 · Responsável técnica</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- COMO CHEGAR -->
-  <section id="como-chegar" style="background: #FFFFFF; border-top: 1px solid #D5E1DE; border-bottom: 1px solid #D5E1DE">
-    <div style="max-width: 1120px; margin: 0 auto; padding: clamp(56px, 8vw, 96px) 24px; box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: center; gap: 48px">
-      <div style="flex: 1 1 340px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
-        <h2 style="margin: 0; font-family: 'Bricolage Grotesque', 'Figtree', system-ui, sans-serif; font-weight: 700; font-size: clamp(30px, 4vw, 44px); line-height: 1.1; letter-spacing: -0.02em; text-wrap: balance">Como chegar</h2>
-        <address style="font-style: normal; display: flex; flex-direction: column; gap: 2px; font-size: 20px; font-weight: 500">
-          <span>Rua Clélia, 2208 – conjunto 602</span>
-          <span>Lapa, São Paulo – SP</span>
-        </address>
-        <p style="margin: 0; color: #4B6064; text-wrap: pretty">Atendemos de segunda a sexta, das 09h às 18h, e em sábados alternados, das 09h às 13h.</p>
-        <div style="display: flex; flex-wrap: wrap; gap: 12px 16px; padding-top: 4px">
-          <a class="btn btn-primary" href="https://www.google.com/maps/dir/?api=1&amp;destination=Rua%20Cl%C3%A9lia%202208%2C%20Lapa%2C%20S%C3%A3o%20Paulo%20-%20SP" style="background: #1B6F69; color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 18px; padding: 0 28px; min-height: 56px; border-radius: 999px; display: inline-flex; align-items: center">Traçar rota</a>
-          <a class="btn btn-light" href="https://www.google.com/maps/search/?api=1&amp;query=Rua%20Cl%C3%A9lia%202208%2C%20Lapa%2C%20S%C3%A3o%20Paulo%20-%20SP" style="background: transparent; color: #1B6F69; border: 2px solid #1B6F69; box-sizing: border-box; text-decoration: none; font-weight: 600; font-size: 18px; padding: 0 26px; min-height: 56px; border-radius: 999px; display: inline-flex; align-items: center">Abrir no Google Maps</a>
-        </div>
-      </div>
-      <div style="flex: 1 1 420px; min-width: 0">
-        <iframe title="Mapa com a localização da Apparence Odontologia, na Rua Clélia, 2208, Lapa, São Paulo" src="https://maps.google.com/maps?q=Rua%20Cl%C3%A9lia%202208%2C%20Lapa%2C%20S%C3%A3o%20Paulo%20-%20SP&amp;hl=pt-BR&amp;z=17&amp;output=embed" width="100%" height="400" style="display: block; border: 0; border-radius: 28px; background: #E3EEEB" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
-      </div>
-    </div>
-  </section>
-
-  <!-- INSTAGRAM -->
-  <section class="dark" style="background: #14282C; color: #FFFFFF">
-    <div style="max-width: 1120px; margin: 0 auto; padding: clamp(48px, 7vw, 80px) 24px; box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 32px">
-      <div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
-        <h2 style="margin: 0; font-family: 'Bricolage Grotesque', 'Figtree', system-ui, sans-serif; font-weight: 700; font-size: clamp(28px, 3.6vw, 40px); line-height: 1.12; letter-spacing: -0.02em; text-wrap: balance">Acompanhe a rotina da clínica no Instagram</h2>
-        <p style="margin: 0; color: #C9DAD7; max-width: 56ch; text-wrap: pretty">Aqui você encontra as informações para escolher e agendar. No Instagram, continuam as novidades, as dicas de cuidado e o dia a dia da equipe.</p>
-      </div>
-      <a class="btn btn-light" href="https://www.instagram.com/aparence_odontologia/" style="background: #FFFFFF; color: #14282C; text-decoration: none; font-weight: 600; font-size: 18px; padding: 0 28px; min-height: 56px; border-radius: 999px; display: inline-flex; align-items: center">Abrir o Instagram @aparence_odontologia</a>
-    </div>
-  </section>
-
-  <!-- DÚVIDAS -->
-  <section id="duvidas">
-    <div style="max-width: 820px; margin: 0 auto; padding: clamp(56px, 8vw, 96px) 24px; box-sizing: border-box; display: flex; flex-direction: column; gap: 32px">
-      <h2 style="margin: 0; font-family: 'Bricolage Grotesque', 'Figtree', system-ui, sans-serif; font-weight: 700; font-size: clamp(30px, 4vw, 44px); line-height: 1.1; letter-spacing: -0.02em; text-wrap: balance">Dúvidas frequentes</h2>
-      <div style="display: flex; flex-direction: column; border-top: 1px solid #D5E1DE">
-
-        <details style="border-bottom: 1px solid #D5E1DE">
-          <summary style="cursor: pointer; min-height: 44px; padding: 20px 0; display: flex; align-items: center; justify-content: space-between; gap: 16px; font-weight: 600; font-size: 19px">
-            Como faço para agendar?
-            <svg class="plus" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" style="flex: none"><path d="M10 3v14M3 10h14" stroke="#1B6F69" stroke-width="2" stroke-linecap="round"/></svg>
-          </summary>
-          <p style="margin: 0 0 20px; color: #4B6064; max-width: 62ch">Envie uma mensagem pelo WhatsApp dizendo o que você procura. A equipe responde com os horários disponíveis.</p>
-        </details>
-
-        <details style="border-bottom: 1px solid #D5E1DE">
-          <summary style="cursor: pointer; min-height: 44px; padding: 20px 0; display: flex; align-items: center; justify-content: space-between; gap: 16px; font-weight: 600; font-size: 19px">
-            A primeira consulta já define o tratamento?
-            <svg class="plus" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" style="flex: none"><path d="M10 3v14M3 10h14" stroke="#1B6F69" stroke-width="2" stroke-linecap="round"/></svg>
-          </summary>
-          <p style="margin: 0 0 20px; color: #4B6064; max-width: 62ch">A avaliação serve para examinar a sua boca e conversar sobre as opções. O plano de tratamento é indicado de acordo com o seu caso.</p>
-        </details>
-
-        <details style="border-bottom: 1px solid #D5E1DE">
-          <summary style="cursor: pointer; min-height: 44px; padding: 20px 0; display: flex; align-items: center; justify-content: space-between; gap: 16px; font-weight: 600; font-size: 19px">
-            O clareamento dental é indicado para todo mundo?
-            <svg class="plus" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" style="flex: none"><path d="M10 3v14M3 10h14" stroke="#1B6F69" stroke-width="2" stroke-linecap="round"/></svg>
-          </summary>
-          <p style="margin: 0 0 20px; color: #4B6064; max-width: 62ch">Depende. O dentista avalia a saúde dos dentes e das gengivas antes de indicar o clareamento.</p>
-        </details>
-
-        <details style="border-bottom: 1px solid #D5E1DE">
-          <summary style="cursor: pointer; min-height: 44px; padding: 20px 0; display: flex; align-items: center; justify-content: space-between; gap: 16px; font-weight: 600; font-size: 19px">
-            Quais são as formas de pagamento?
-            <svg class="plus" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" style="flex: none"><path d="M10 3v14M3 10h14" stroke="#1B6F69" stroke-width="2" stroke-linecap="round"/></svg>
-          </summary>
-          <p style="margin: 0 0 20px; color: #4B6064; max-width: 62ch">Aceitamos dinheiro, PIX e cartão de crédito ou débito. Também é possível parcelar no boleto, mediante aprovação cadastral pela financeira Dr Cash.</p>
-        </details>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA FINAL -->
-  <section style="background: #E3EEEB; border-top: 1px solid #D5E1DE">
-    <div style="max-width: 1120px; margin: 0 auto; padding: clamp(48px, 7vw, 80px) 24px; box-sizing: border-box; display: flex; flex-direction: column; align-items: flex-start; gap: 24px">
-      <h2 style="margin: 0; max-width: 18ch; font-family: 'Bricolage Grotesque', 'Figtree', system-ui, sans-serif; font-weight: 700; font-size: clamp(30px, 4.4vw, 52px); line-height: 1.08; letter-spacing: -0.025em; text-wrap: balance">Vamos conversar sobre o seu sorriso?</h2>
-      <p style="margin: 0; max-width: 52ch; color: #3F5A58; text-wrap: pretty">Envie uma mensagem e agende a sua avaliação na Apparence Odontologia.</p>
-      <a class="btn btn-primary" href="https://wa.me/5511960717526?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." style="background: #1B6F69; color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 18px; padding: 0 28px; min-height: 56px; border-radius: 999px; display: inline-flex; align-items: center">Agendar pelo WhatsApp</a>
-    </div>
-  </section>
-
-  <!-- RODAPÉ -->
-  <footer class="dark" style="background: #14282C; color: #FFFFFF">
-    <div style="max-width: 1120px; margin: 0 auto; padding: 56px 24px 32px; box-sizing: border-box; display: flex; flex-direction: column; gap: 40px">
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr)); gap: 32px">
         <div>
-          <div style="display: inline-flex; background: #FDFEFF; border-radius: 16px; padding: 12px 18px">
-            <img src="images/logo-apparence.jpg" alt="Apparence Odontologia" style="display: block; height: 64px; width: auto">
-          </div>
+          <a class="btn btn-outline" href="https://wa.me/5511960717526?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
         </div>
-        <div style="display: flex; flex-direction: column; gap: 6px; font-size: 16px">
-          <span style="font-size: 13px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #C9DAD7">Endereço</span>
-          <span>Rua Clélia, 2208 – cj 602</span>
-          <span>Lapa · São Paulo – SP</span>
-        </div>
-        <div style="display: flex; flex-direction: column; gap: 6px; font-size: 16px">
-          <span style="font-size: 13px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #C9DAD7">Horários</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. COMO CHEGAR -->
+  <section class="section where" id="como-chegar">
+    <div class="wrap">
+      <div class="where-text">
+        <h2>Como chegar</h2>
+        <address>Rua Clélia, 2208, conjunto 602<br>Lapa, São Paulo – SP</address>
+        <div class="where-hours">
           <span>Segunda a sexta, das 09h às 18h</span>
           <span>Sábados alternados, das 09h às 13h</span>
         </div>
-        <div style="display: flex; flex-direction: column; gap: 6px; font-size: 16px">
-          <span style="font-size: 13px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #C9DAD7">Contato</span>
-          <a href="https://wa.me/5511960717526?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." style="min-height: 44px; display: inline-flex; align-items: center">WhatsApp: (11) 96071-7526</a>
-          <a href="https://www.instagram.com/aparence_odontologia/" style="min-height: 44px; display: inline-flex; align-items: center">Instagram: @aparence_odontologia</a>
+        <div class="where-actions">
+          <a class="btn btn-primary" href="https://www.google.com/maps/dir/?api=1&amp;destination=Rua+Cl%C3%A9lia%2C+2208%2C+Lapa%2C+S%C3%A3o+Paulo+-+SP" target="_blank" rel="noopener">Traçar rota</a>
+          <a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&amp;query=Rua+Cl%C3%A9lia%2C+2208%2C+Lapa%2C+S%C3%A3o+Paulo+-+SP" target="_blank" rel="noopener">Abrir no Google Maps</a>
         </div>
       </div>
-      <div style="border-top: 1px solid #35504F; padding-top: 24px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; font-size: 14px; color: #C9DAD7">
-        <span>Responsável técnica: Gabriela Torres Belo · CRO/SP-CD-138560</span>
-        <span>© 2026 Apparence Odontologia</span>
+      <iframe class="map" title="Mapa do Google com a localização da Apparence Odontologia, na Rua Clélia, 2208, Lapa, São Paulo" src="https://www.google.com/maps?q=Rua+Cl%C3%A9lia%2C+2208%2C+Lapa%2C+S%C3%A3o+Paulo+-+SP&amp;hl=pt-BR&amp;z=17&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- 9. INSTAGRAM -->
+  <section class="section insta on-dark" style="padding:clamp(44px,6vw,72px) 0">
+    <div class="wrap">
+      <div class="insta-text">
+        <h2>Siga a Apparence no Instagram</h2>
+        <p>A clínica também está no Instagram. Acompanhe o perfil @aparence_odontologia.</p>
+      </div>
+      <a class="btn btn-white btn-lg" href="https://www.instagram.com/aparence_odontologia/" target="_blank" rel="noopener">Abrir o Instagram</a>
+    </div>
+  </section>
+
+  <!-- 10. DÚVIDAS FREQUENTES -->
+  <section class="section faq" id="duvidas">
+    <div class="wrap">
+      <h2>Dúvidas frequentes</h2>
+      <div class="faq-list">
+        <details>
+          <summary>Como faço para agendar?
+            <svg class="plus" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 3v14M3 10h14" stroke="#0B6B66" stroke-width="2" stroke-linecap="round"/></svg>
+          </summary>
+          <p>Pelo WhatsApp. Clique em qualquer botão desta página, envie a mensagem que já vem escrita e combine o horário da sua avaliação.</p>
+        </details>
+        <details>
+          <summary>O que a primeira consulta define?
+            <svg class="plus" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 3v14M3 10h14" stroke="#0B6B66" stroke-width="2" stroke-linecap="round"/></svg>
+          </summary>
+          <p>A primeira consulta é uma avaliação. O dentista examina a sua boca, ouve o que você procura e explica as opções. A indicação de cada tratamento depende dessa avaliação.</p>
+        </details>
+        <details>
+          <summary>O clareamento dental é indicado para todo mundo?
+            <svg class="plus" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 3v14M3 10h14" stroke="#0B6B66" stroke-width="2" stroke-linecap="round"/></svg>
+          </summary>
+          <p>Nem sempre. A indicação depende da avaliação do dentista, que verifica a saúde dos dentes e das gengivas antes de decidir.</p>
+        </details>
+        <details>
+          <summary>Quais são as formas de pagamento?
+            <svg class="plus" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 3v14M3 10h14" stroke="#0B6B66" stroke-width="2" stroke-linecap="round"/></svg>
+          </summary>
+          <p>Dinheiro, PIX e cartão de crédito ou débito. Também há parcelamento no boleto, mediante aprovação cadastral pela financeira Dr Cash.</p>
+        </details>
       </div>
     </div>
-  </footer>
+  </section>
 
-</div>
+  <!-- 11. CHAMADA FINAL -->
+  <section class="section final" style="padding:clamp(48px,7vw,84px) 0">
+    <div class="wrap">
+      <h2>Vamos conversar sobre o seu sorriso?</h2>
+      <p>Envie uma mensagem pelo WhatsApp e agende a sua avaliação na Apparence Odontologia.</p>
+      <a class="btn btn-primary btn-lg" href="https://wa.me/5511960717526?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
+    </div>
+  </section>
+
 </main>
+
+<!-- 12. RODAPÉ -->
+<footer class="footer on-dark">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <span class="logo-strip"><img src="images/logo-apparence.jpg" width="700" height="345" loading="lazy" alt="Apparence Odontologia"></span>
+      </div>
+      <div class="footer-col">
+        <span class="label">Endereço</span>
+        <span>Rua Clélia, 2208, conjunto 602</span>
+        <span>Lapa, São Paulo – SP</span>
+      </div>
+      <div class="footer-col">
+        <span class="label">Horários</span>
+        <span>Segunda a sexta, das 09h às 18h</span>
+        <span>Sábados alternados, das 09h às 13h</span>
+      </div>
+      <div class="footer-col">
+        <span class="label">Contatos</span>
+        <a href="https://wa.me/5511960717526?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">WhatsApp: (11) 96071-7526</a>
+        <a href="https://www.instagram.com/aparence_odontologia/" target="_blank" rel="noopener">Instagram: @aparence_odontologia</a>
+      </div>
+    </div>
+    <div class="legal">
+      <span>Responsável técnica: Gabriela Torres Belo · CRO/SP-CD-138560</span>
+      <span>© 2026 Apparence Odontologia</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Barra fixa no celular -->
+<div class="sticky">
+  <a class="btn btn-primary" href="https://wa.me/5511960717526?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
+</div>
+<script>
+(function(){
+  var bar=document.querySelector('.sticky'),hero=document.getElementById('inicio');
+  if(!bar||!hero||!('IntersectionObserver' in window)) return;
+  new IntersectionObserver(function(e){bar.classList.toggle('show',!e[0].isIntersecting)},{threshold:0}).observe(hero);
+})();
+</script>
 </body>
 </html>
